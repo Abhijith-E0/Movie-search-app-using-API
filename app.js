@@ -27,6 +27,8 @@ let award = document.querySelector('#awards');
 let imdbRating = document.querySelector('#imdbRating');
 let language = document.querySelector('#ln');
 let img = document.querySelector('#img');
+let remainder = document.querySelector('.remainder');
+let remainder1 = document.querySelector('.remainder1');
 let container = document.querySelector('#container');
 container.classList.add('hidden');
 let error = document.querySelector('#error');
@@ -39,11 +41,13 @@ function search(){
    fetch(quary).then(data=> data.json()).then(data=>{
       error.innerText = ""
       if(data.Error === "Movie not found!"){
-         error.innerText = 'Sorry Buddy The Movie Not Found 💔'
-         container.classList.add('hidden');
+            error.innerText = 'Sorry Buddy The Movie Not Found 💔'
+            container.classList.add('hidden');
       }
       else{
          container.classList.remove('hidden');
+         remainder.style.display = "none";
+         remainder1.style.display = "none";
          title.innerText = data.Title;
          genre.innerText = data.Genre;
          desc.innerText = data.Plot;
@@ -73,20 +77,20 @@ function search(){
 });
 }
 
-let searchInput = document.querySelector("#movieName");
-let remainder = document.querySelector(".remainder");
-let remainder1 = document.querySelector(".remainder1");
+// let searchInput = document.querySelector("#movieName");
+// let remainder = document.querySelector(".remainder");
+// let remainder1 = document.querySelector(".remainder1");
 
-searchInput.addEventListener("focus",()=>{
-    remainder.classList.add("hide");
-    remainder1.classList.add("hide");
-});
+// searchInput.addEventListener("focus",()=>{
+//     remainder.classList.add("hide");
+//     remainder1.classList.add("hide");
+// });
 
-searchInput.addEventListener("blur",()=>{
-    if(searchInput.value === ""){
-        remainder.classList.remove("hide");
-        remainder1.classList.remove("hide");
-    }
-});
+// searchInput.addEventListener("blur",()=>{
+//     if(searchInput.value === ""){
+//         remainder.classList.remove("hide");
+//         remainder1.classList.remove("hide");
+//     }
+// });
 
 
