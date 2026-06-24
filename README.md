@@ -24,7 +24,9 @@ Users can search for any movie and get information like poster, title, release y
 ### Screenshots
 
 ![Movie-search-app-using-API](./images/screenshot1.png)
+
 ![movie search app api](./images/screenshot3.png)
+
 ![movie search app api](./images/screenshot2.png)
 
 ## Technologies Used
