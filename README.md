@@ -21,7 +21,7 @@ Users can search for any movie and get information like poster, title, release y
 - Dynamic API data fetching
 
 ---
-### Screenshots
+## Screenshots
 
 ![Movie-search-app-using-API](./images/screenshot1.png)
 
