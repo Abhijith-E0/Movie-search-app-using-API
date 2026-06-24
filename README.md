@@ -39,7 +39,7 @@ Users can search for any movie and get information like poster, title, release y
 
 ---
 ### Live Demo
-live link : 
+live link : https://abhijith-e0.github.io/Movie-search-app-using-API/
 
 ## Project Structure
 ```bash
